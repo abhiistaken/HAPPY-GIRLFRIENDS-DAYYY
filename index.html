@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Bouquet For You 🌸</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="garden">
+
+        <h1>🌸 HAPPY GIRLFRIENDS DAY MY LOVE 🌸</h1>
+
+        <p class="subtitle">
+            pick the flowers you love princess and create your pretty own bouquet 💗
+        </p>
+
+
+        <div class="container">
+
+
+            <!-- FLOWER OPTIONS -->
+
+            <div class="flower-panel">
+
+                <h2>Choose Your Flowers 🌷</h2>
+
+
+                <div class="flower-card" onclick="addFlower('white-rose')">
+                    <img src="white-rose.jpg">
+                    <p>White Rose 🤍</p>
+                    <button>Add</button>
+                </div>
+
+
+                <div class="flower-card" onclick="addFlower('dahlia')">
+                    <img src="dahlia.jpg">
+                    <p>Dahlia 🌺</p>
+                    <button>Add</button>
+                </div>
+
+
+                <div class="flower-card" onclick="addFlower('lily')">
+                    <img src="lily.jpg">
+                    <p>Lily of the Valley 🌿</p>
+                    <button>Add</button>
+                </div>
+
+
+                <div class="flower-card" onclick="addFlower('camellia')">
+                    <img src="camellia.jpg">
+                    <p>Camellia 🌸</p>
+                    <button>Add</button>
+                </div>
+
+
+                <div class="flower-card" onclick="addFlower('spider-lily')">
+                    <img src="spider-lily.jpg">
+                    <p>Spider Lily ❤️</p>
+                    <button>Add</button>
+                </div>
+
+
+                <div class="flower-card" onclick="addFlower('delphinium')">
+                    <img src="delphinium.jpg">
+                    <p>Pink Delphinium 🌷</p>
+                    <button>Add</button>
+                </div>
+
+
+                <div class="flower-card" onclick="addFlower('babys-breath')">
+                    <img src="babys-breath.jpg">
+                    <p>Baby's Breath ☁️</p>
+                    <button>Add</button>
+                </div>
+
+
+                <div class="flower-card" onclick="addFlower('cherry-blossom')">
+                    <img src="cherry-blossom.jpg">
+                    <p>Cherry Blossom 🌸</p>
+                    <button>Add</button>
+                </div>
+
+
+                <div class="flower-card" onclick="addFlower('ume')">
+                    <img src="ume.jpg">
+                    <p>Ume Blossom 🌺</p>
+                    <button>Add</button>
+                </div>
+
+
+                <div class="flower-card" onclick="addFlower('fuchsia')">
+                    <img src="fuchsia.jpg">
+                    <p>Fuchsia 💗</p>
+                    <button>Add</button>
+                </div>
+
+
+            </div>
+
+
+
+            <!-- BOUQUET AREA -->
+
+
+            <div class="bouquet-area">
+
+
+                <h2>Your Bouquet 💐</h2>
+
+               <div id="bouquet">
+
+    <p id="empty">
+        Your bouquet is empty 🌱
+    </p>
+
+
+        <div class="stem"></div>
+
+    </div>
+
+
+
+               <button class="finish" onclick="wrapBouquet()">
+    Wrap Bouquet 🎀
+</button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

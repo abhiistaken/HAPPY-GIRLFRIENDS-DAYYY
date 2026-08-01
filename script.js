@@ -17,7 +17,7 @@ function addFlower(flowerName) {
     let flower = document.createElement("img");
 
 
-  flower.src = `${flowerName}.jpg`;
+    flower.src = `images/${flowerName}.jpg`;
 
     flower.classList.add("flower-added");
 
@@ -67,72 +67,26 @@ function addFlower(flowerName) {
 
 
 
-function wrapBouquet(){
+function sparkleBouquet() {
 
-    if(flowerCount===0){
+    const bouquet = document.getElementById("bouquet");
 
-        alert("Your bouquet needs flowers first 🌸");
+    for (let i = 0; i < 40; i++) {
 
-        return;
+        let sparkle = document.createElement("div");
+        sparkle.className = "sparkle";
 
+        sparkle.style.left = Math.random() * bouquet.offsetWidth + "px";
+        sparkle.style.top = Math.random() * bouquet.offsetHeight + "px";
+
+        sparkle.style.animationDelay = Math.random() * 0.5 + "s";
+
+        bouquet.appendChild(sparkle);
+
+        setTimeout(() => {
+            sparkle.remove();
+        }, 1500);
     }
-
-    document.querySelector(".ribbon").classList.add("show");
-
-
-
-    for(let i=0;i<30;i++){
-
-        let s=document.createElement("div");
-
-        s.className="sparkle";
-
-        s.innerHTML=Math.random()>.5?"✨":"🌸";
-
-
-
-        s.style.left=Math.random()*100+"%";
-
-        s.style.top=(250+Math.random()*120)+"px";
-
-
-
-        document.querySelector(".bouquet-area").appendChild(s);
-
-
-
-        setTimeout(()=>{
-
-            s.remove();
-
-        },1600);
-
-    }
-
-
-
-    setTimeout(()=>{
-
-        let msg=document.createElement("div");
-
-        msg.className="complete-message";
-
-
-
-        msg.innerHTML=`
-        💐 Your bouquet is beautifully wrapped! <br><br>
-
-        Every flower you chose reminds me of something I love about you. 🌸
-        `;
-
-
-
-        document.querySelector(".bouquet-area").appendChild(msg);
-
-
-
-    },700);
-
 }
 
 

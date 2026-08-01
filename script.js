@@ -17,7 +17,7 @@ function addFlower(flowerName) {
     let flower = document.createElement("img");
 
 
-    flower.src = `images/${flowerName}.jpg`;
+  flower.src = `${flowerName}.jpg`;
 
     flower.classList.add("flower-added");
 
